@@ -16,15 +16,6 @@
 		2B127C08201911DC0099F405 /* MapboxVectorTilesImageDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2B127C06201911DC0099F405 /* MapboxVectorTilesImageDelegate.mm */; };
 		2B3FD2C31F478F5200CA9C18 /* MaplyRenderTarget.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2B3FD2C21F478F5200CA9C18 /* MaplyRenderTarget.mm */; };
 		2B541C171ECFAA2300EC35A0 /* MaplyRenderTarget.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B541C161ECFAA2300EC35A0 /* MaplyRenderTarget.h */; };
-		2B82B5CA1E82E2490095FB14 /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B82B3A11E82E2490095FB14 /* common.h */; };
-		2B82B5CB1E82E2490095FB14 /* eqarea.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B82B3A21E82E2490095FB14 /* eqarea.h */; };
-		2B82B5CC1E82E2490095FB14 /* eqdist.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B82B3A31E82E2490095FB14 /* eqdist.h */; };
-		2B82B5CD1E82E2490095FB14 /* fixed.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B82B3A41E82E2490095FB14 /* fixed.h */; };
-		2B82B5CE1E82E2490095FB14 /* LatLongD.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B82B3A51E82E2490095FB14 /* LatLongD.h */; };
-		2B82B5CF1E82E2490095FB14 /* oct.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B82B3A61E82E2490095FB14 /* oct.h */; };
-		2B82B5D01E82E2490095FB14 /* snorm.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B82B3A71E82E2490095FB14 /* snorm.h */; };
-		2B82B5D11E82E2490095FB14 /* spherical.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B82B3A81E82E2490095FB14 /* spherical.h */; };
-		2B82B5D21E82E2490095FB14 /* stereo.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B82B3A91E82E2490095FB14 /* stereo.h */; };
 		2B82B5D31E82E2490095FB14 /* SDL_opengles.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B82B3AB1E82E2490095FB14 /* SDL_opengles.h */; };
 		2B82B5D51E82E2490095FB14 /* glues_error.c in Sources */ = {isa = PBXBuildFile; fileRef = 2B82B3AD1E82E2490095FB14 /* glues_error.c */; };
 		2B82B5D61E82E2490095FB14 /* glues_error.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B82B3AE1E82E2490095FB14 /* glues_error.h */; };
@@ -598,8 +589,6 @@
 		2BB476862000488D006AAACB /* MapboxVectorStyleSymbol.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2BB476802000488C006AAACB /* MapboxVectorStyleSymbol.mm */; };
 		2BB476872000488D006AAACB /* MapboxVectorStyleRaster.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2BB476812000488C006AAACB /* MapboxVectorStyleRaster.mm */; };
 		2BE537031D2499E500B60FAD /* WhirlyGlobeMaplyComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BE537021D2499E500B60FAD /* WhirlyGlobeMaplyComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2BE5370A1D2499E500B60FAD /* WhirlyGlobeMaplyComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE536FF1D2499E500B60FAD /* WhirlyGlobeMaplyComponent.framework */; };
-		2BE5370F1D2499E500B60FAD /* WhirlyGlobeMaplyComponentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE5370E1D2499E500B60FAD /* WhirlyGlobeMaplyComponentTests.m */; };
 		2BE537F71D249A1200B60FAD /* Maply3DTouchPreviewDatasource.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BE5371B1D249A1200B60FAD /* Maply3DTouchPreviewDatasource.h */; };
 		2BE537F81D249A1200B60FAD /* Maply3dTouchPreviewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BE5371C1D249A1200B60FAD /* Maply3dTouchPreviewDelegate.h */; };
 		2BE537F91D249A1200B60FAD /* MaplyActiveObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BE5371D1D249A1200B60FAD /* MaplyActiveObject.h */; };
@@ -1053,16 +1042,6 @@
 		E5EF69FF1D6B938800A2A660 /* SLDSymbolizers.m in Sources */ = {isa = PBXBuildFile; fileRef = E5EF69FC1D6B938800A2A660 /* SLDSymbolizers.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		2BE5370B1D2499E500B60FAD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2BE536F61D2499E500B60FAD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2BE536FE1D2499E500B60FAD;
-			remoteInfo = WhirlyGlobeMaplyComponent;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		2B127BF720126FBD0099F405 /* MaplyRenderController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaplyRenderController.h; sourceTree = "<group>"; };
 		2B127BF82012A12A0099F405 /* MaplyRenderController_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaplyRenderController_private.h; sourceTree = "<group>"; };
@@ -1074,15 +1053,6 @@
 		2B127C06201911DC0099F405 /* MapboxVectorTilesImageDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MapboxVectorTilesImageDelegate.mm; sourceTree = "<group>"; };
 		2B3FD2C21F478F5200CA9C18 /* MaplyRenderTarget.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MaplyRenderTarget.mm; sourceTree = "<group>"; };
 		2B541C161ECFAA2300EC35A0 /* MaplyRenderTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaplyRenderTarget.h; sourceTree = "<group>"; };
-		2B82B3A11E82E2490095FB14 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = common.h; path = "/Users/sjg/iPhone/WhirlyGlobe2/ios/third-party/octencoding/../../../common/local_libs/octencoding/common.h"; sourceTree = "<absolute>"; };
-		2B82B3A21E82E2490095FB14 /* eqarea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = eqarea.h; path = "/Users/sjg/iPhone/WhirlyGlobe2/ios/third-party/octencoding/../../../common/local_libs/octencoding/eqarea.h"; sourceTree = "<absolute>"; };
-		2B82B3A31E82E2490095FB14 /* eqdist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = eqdist.h; path = "/Users/sjg/iPhone/WhirlyGlobe2/ios/third-party/octencoding/../../../common/local_libs/octencoding/eqdist.h"; sourceTree = "<absolute>"; };
-		2B82B3A41E82E2490095FB14 /* fixed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fixed.h; path = "/Users/sjg/iPhone/WhirlyGlobe2/ios/third-party/octencoding/../../../common/local_libs/octencoding/fixed.h"; sourceTree = "<absolute>"; };
-		2B82B3A51E82E2490095FB14 /* LatLongD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LatLongD.h; path = "/Users/sjg/iPhone/WhirlyGlobe2/ios/third-party/octencoding/../../../common/local_libs/octencoding/LatLongD.h"; sourceTree = "<absolute>"; };
-		2B82B3A61E82E2490095FB14 /* oct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = oct.h; path = "/Users/sjg/iPhone/WhirlyGlobe2/ios/third-party/octencoding/../../../common/local_libs/octencoding/oct.h"; sourceTree = "<absolute>"; };
-		2B82B3A71E82E2490095FB14 /* snorm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = snorm.h; path = "/Users/sjg/iPhone/WhirlyGlobe2/ios/third-party/octencoding/../../../common/local_libs/octencoding/snorm.h"; sourceTree = "<absolute>"; };
-		2B82B3A81E82E2490095FB14 /* spherical.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = spherical.h; path = "/Users/sjg/iPhone/WhirlyGlobe2/ios/third-party/octencoding/../../../common/local_libs/octencoding/spherical.h"; sourceTree = "<absolute>"; };
-		2B82B3A91E82E2490095FB14 /* stereo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stereo.h; path = "/Users/sjg/iPhone/WhirlyGlobe2/ios/third-party/octencoding/../../../common/local_libs/octencoding/stereo.h"; sourceTree = "<absolute>"; };
 		2B82B3AB1E82E2490095FB14 /* SDL_opengles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDL_opengles.h; path = "../../../third-party/glues/include/SDL/SDL_opengles.h"; sourceTree = "<group>"; };
 		2B82B3AC1E82E2490095FB14 /* glues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = glues.h; path = "../../../third-party/glues/source/glues.h"; sourceTree = "<group>"; };
 		2B82B3AD1E82E2490095FB14 /* glues_error.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = glues_error.c; path = "../../../third-party/glues/source/glues_error.c"; sourceTree = "<group>"; };
@@ -1657,9 +1627,6 @@
 		2BE536FF1D2499E500B60FAD /* WhirlyGlobeMaplyComponent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WhirlyGlobeMaplyComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BE537021D2499E500B60FAD /* WhirlyGlobeMaplyComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhirlyGlobeMaplyComponent.h; sourceTree = "<group>"; };
 		2BE537041D2499E500B60FAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2BE537091D2499E500B60FAD /* WhirlyGlobeMaplyComponentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhirlyGlobeMaplyComponentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2BE5370E1D2499E500B60FAD /* WhirlyGlobeMaplyComponentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhirlyGlobeMaplyComponentTests.m; sourceTree = "<group>"; };
-		2BE537101D2499E500B60FAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BE5371B1D249A1200B60FAD /* Maply3DTouchPreviewDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Maply3DTouchPreviewDatasource.h; sourceTree = "<group>"; };
 		2BE5371C1D249A1200B60FAD /* Maply3dTouchPreviewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Maply3dTouchPreviewDelegate.h; sourceTree = "<group>"; };
 		2BE5371D1D249A1200B60FAD /* MaplyActiveObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaplyActiveObject.h; sourceTree = "<group>"; };
@@ -2136,14 +2103,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2BE537061D2499E500B60FAD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2BE5370A1D2499E500B60FAD /* WhirlyGlobeMaplyComponent.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -2153,23 +2112,6 @@
 				2B82B5C91E82E2490095FB14 /* Classes */,
 			);
 			name = WhirlyGlobeLib;
-			sourceTree = "<group>";
-		};
-		2B82B3AA1E82E2490095FB14 /* octencoding */ = {
-			isa = PBXGroup;
-			children = (
-				2B82B3A11E82E2490095FB14 /* common.h */,
-				2B82B3A21E82E2490095FB14 /* eqarea.h */,
-				2B82B3A31E82E2490095FB14 /* eqdist.h */,
-				2B82B3A41E82E2490095FB14 /* fixed.h */,
-				2B82B3A51E82E2490095FB14 /* LatLongD.h */,
-				2B82B3A61E82E2490095FB14 /* oct.h */,
-				2B82B3A71E82E2490095FB14 /* snorm.h */,
-				2B82B3A81E82E2490095FB14 /* spherical.h */,
-				2B82B3A91E82E2490095FB14 /* stereo.h */,
-			);
-			name = octencoding;
-			path = "../../third-party/octencoding";
 			sourceTree = "<group>";
 		};
 		2B82B3D01E82E2490095FB14 /* libtess */ = {
@@ -3060,7 +3002,6 @@
 			isa = PBXGroup;
 			children = (
 				2B82B7C01E82E6780095FB14 /* clipper */,
-				2B82B3AA1E82E2490095FB14 /* octencoding */,
 				2B82B3D11E82E2490095FB14 /* glu */,
 				2B82B3FF1E82E2490095FB14 /* libjson */,
 				2B82B4041E82E2490095FB14 /* shapelib-1.3.0b2 */,
@@ -3172,7 +3113,6 @@
 				2B884A091E3802EE0027C397 /* laszip */,
 				2BE53A7E1D249C5800B60FAD /* KissXML */,
 				2BE537011D2499E500B60FAD /* WhirlyGlobeMaplyComponent */,
-				2BE5370D1D2499E500B60FAD /* WhirlyGlobeMaplyComponentTests */,
 				2BE537001D2499E500B60FAD /* Products */,
 				2B84ED111F83FC5A00B34D73 /* Frameworks */,
 			);
@@ -3182,7 +3122,6 @@
 			isa = PBXGroup;
 			children = (
 				2BE536FF1D2499E500B60FAD /* WhirlyGlobeMaplyComponent.framework */,
-				2BE537091D2499E500B60FAD /* WhirlyGlobeMaplyComponentTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -3196,15 +3135,6 @@
 				2BE537041D2499E500B60FAD /* Info.plist */,
 			);
 			path = WhirlyGlobeMaplyComponent;
-			sourceTree = "<group>";
-		};
-		2BE5370D1D2499E500B60FAD /* WhirlyGlobeMaplyComponentTests */ = {
-			isa = PBXGroup;
-			children = (
-				2BE5370E1D2499E500B60FAD /* WhirlyGlobeMaplyComponentTests.m */,
-				2BE537101D2499E500B60FAD /* Info.plist */,
-			);
-			path = WhirlyGlobeMaplyComponentTests;
 			sourceTree = "<group>";
 		};
 		2BE537191D249A1200B60FAD /* include */ = {
@@ -3830,7 +3760,6 @@
 				2BE538271D249A1200B60FAD /* MaplyStarsModel.h in Headers */,
 				2BE539801D249BEF00B60FAD /* AARefraction.h in Headers */,
 				2B82B7431E82E24A0095FB14 /* MaplyZoomGestureDelegate.h in Headers */,
-				2B82B5D21E82E2490095FB14 /* stereo.h in Headers */,
 				2BE539661D249BEF00B60FAD /* AAJupiter.h in Headers */,
 				2B82B6EE1E82E24A0095FB14 /* Texture.h in Headers */,
 				2BE5381E1D249A1200B60FAD /* MaplyRemoteTileElevationSource.h in Headers */,
@@ -3896,7 +3825,6 @@
 				2B82B5DF1E82E2490095FB14 /* glues.h in Headers */,
 				2BE539731D249BEF00B60FAD /* AANodes.h in Headers */,
 				2BE5384F1D249A1200B60FAD /* MaplyUpdateLayer_private.h in Headers */,
-				2B82B5CE1E82E2490095FB14 /* LatLongD.h in Headers */,
 				2B82B60E1E82E2490095FB14 /* JSONMemoryPool.h in Headers */,
 				2BE539601D249BEF00B60FAD /* AAFK5.h in Headers */,
 				2B82B73C1E82E24A0095FB14 /* MaplyPinchDelegate.h in Headers */,
@@ -3915,7 +3843,6 @@
 				2BE538181D249A1200B60FAD /* MaplyParticleSystem.h in Headers */,
 				2B82B6091E82E2490095FB14 /* JSONDefs.h in Headers */,
 				2BE5384C1D249A1200B60FAD /* MaplySphericalQuadEarthWithTexGroup_private.h in Headers */,
-				2B82B5D01E82E2490095FB14 /* snorm.h in Headers */,
 				2BE539781D249BEF00B60FAD /* AAPhysicalJupiter.h in Headers */,
 				2BE538131D249A1200B60FAD /* MaplyMBTileSource.h in Headers */,
 				2B82B7051E82E24A0095FB14 /* LayoutManager.h in Headers */,
@@ -3935,7 +3862,6 @@
 				2B884A491E3803170027C397 /* bytestreamin_file.hpp in Headers */,
 				2BE538211D249A1200B60FAD /* MaplyScreenMarker.h in Headers */,
 				2B82B6041E82E2490095FB14 /* JSONDebug.h in Headers */,
-				2B82B5CD1E82E2490095FB14 /* fixed.h in Headers */,
 				2BE53A011D249C2900B60FAD /* dynamic_message.h in Headers */,
 				2B82B7311E82E24A0095FB14 /* AnimateRotation.h in Headers */,
 				2BE53A691D249C4600B60FAD /* atomicops_internals_mips_gcc.h in Headers */,
@@ -3968,7 +3894,6 @@
 				2B884A651E3803170027C397 /* lasreaditemraw.hpp in Headers */,
 				2B82B7201E82E24A0095FB14 /* LoadedTile.h in Headers */,
 				2BE53A411D249C3D00B60FAD /* zero_copy_stream_impl.h in Headers */,
-				2B82B5CA1E82E2490095FB14 /* common.h in Headers */,
 				2BE5398A1D249BEF00B60FAD /* stdafx.h in Headers */,
 				2BE5381F1D249A1200B60FAD /* MaplyRemoteTileSource.h in Headers */,
 				2B82B6D51E82E24A0095FB14 /* FlatMath.h in Headers */,
@@ -4029,7 +3954,6 @@
 				2BE5382C1D249A1200B60FAD /* MaplyTileSource.h in Headers */,
 				2B82B6FB1E82E24A0095FB14 /* ActiveModel.h in Headers */,
 				2B884A511E3803170027C397 /* bytestreamout_ostream.hpp in Headers */,
-				2B82B5CB1E82E2490095FB14 /* eqarea.h in Headers */,
 				2B82B5E71E82E2490095FB14 /* memalloc.h in Headers */,
 				2B82B5EF1E82E2490095FB14 /* priorityq.h in Headers */,
 				2BE5397A1D249BEF00B60FAD /* AAPhysicalMoon.h in Headers */,
@@ -4048,14 +3972,12 @@
 				2BB4767B2000486F006AAACB /* MapboxVectorStyleSet.h in Headers */,
 				2B82B7111E82E24A0095FB14 /* WideVectorDrawable.h in Headers */,
 				2B82B7061E82E24A0095FB14 /* LoftManager.h in Headers */,
-				2B82B5CF1E82E2490095FB14 /* oct.h in Headers */,
 				2B82B5D81E82E2490095FB14 /* glues_mipmap.h in Headers */,
 				2BE5380E1D249A1200B60FAD /* MaplyImageTile.h in Headers */,
 				2B82B6071E82E2490095FB14 /* Unknown_C.h in Headers */,
 				2B82B7151E82E24A0095FB14 /* DataLayer.h in Headers */,
 				2BE5397F1D249BEF00B60FAD /* AAPrecession.h in Headers */,
 				2B82B7141E82E24A0095FB14 /* ParticleSystemLayer.h in Headers */,
-				2B82B5CC1E82E2490095FB14 /* eqdist.h in Headers */,
 				2BE538321D249A1200B60FAD /* MaplyViewTracker.h in Headers */,
 				2BE5385C1D249A1200B60FAD /* MapboxMultiSourceTileInfo.h in Headers */,
 				2B884A781E3803170027C397 /* laszipper.hpp in Headers */,
@@ -4199,7 +4121,6 @@
 				2BE537FB1D249A1200B60FAD /* MaplyAnimationTestTileSource.h in Headers */,
 				2B82B6DC1E82E24A0095FB14 /* NSString+Stuff.h in Headers */,
 				2BE538701D249A1200B60FAD /* WGCoordinate.h in Headers */,
-				2B82B5D11E82E2490095FB14 /* spherical.h in Headers */,
 				2BE5382F1D249A1200B60FAD /* MaplyVertexAttribute.h in Headers */,
 				2BE53A141D249C2900B60FAD /* service.h in Headers */,
 				2BE537FF1D249A1200B60FAD /* MaplyBillboard.h in Headers */,
@@ -4330,37 +4251,16 @@
 			productReference = 2BE536FF1D2499E500B60FAD /* WhirlyGlobeMaplyComponent.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		2BE537081D2499E500B60FAD /* WhirlyGlobeMaplyComponentTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2BE537161D2499E500B60FAD /* Build configuration list for PBXNativeTarget "WhirlyGlobeMaplyComponentTests" */;
-			buildPhases = (
-				2BE537051D2499E500B60FAD /* Sources */,
-				2BE537061D2499E500B60FAD /* Frameworks */,
-				2BE537071D2499E500B60FAD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2BE5370C1D2499E500B60FAD /* PBXTargetDependency */,
-			);
-			name = WhirlyGlobeMaplyComponentTests;
-			productName = WhirlyGlobeMaplyComponentTests;
-			productReference = 2BE537091D2499E500B60FAD /* WhirlyGlobeMaplyComponentTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		2BE536F61D2499E500B60FAD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "mousebird consulting";
 				TargetAttributes = {
 					2BE536FE1D2499E500B60FAD = {
-						CreatedOnToolsVersion = 7.3.1;
-					};
-					2BE537081D2499E500B60FAD = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
@@ -4378,20 +4278,12 @@
 			projectRoot = "";
 			targets = (
 				2BE536FE1D2499E500B60FAD /* WhirlyGlobeMaplyComponent */,
-				2BE537081D2499E500B60FAD /* WhirlyGlobeMaplyComponentTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2BE536FD1D2499E500B60FAD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2BE537071D2499E500B60FAD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -4950,23 +4842,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2BE537051D2499E500B60FAD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2BE5370F1D2499E500B60FAD /* WhirlyGlobeMaplyComponentTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		2BE5370C1D2499E500B60FAD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2BE536FE1D2499E500B60FAD /* WhirlyGlobeMaplyComponent */;
-			targetProxy = 2BE5370B1D2499E500B60FAD /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		2BE537111D2499E500B60FAD /* Debug */ = {
@@ -4982,12 +4858,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -5039,12 +4917,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -5184,28 +5064,6 @@
 			};
 			name = Release;
 		};
-		2BE537171D2499E500B60FAD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = WhirlyGlobeMaplyComponentTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mousebirdconsulting.WhirlyGlobeMaplyComponentTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		2BE537181D2499E500B60FAD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
-				INFOPLIST_FILE = WhirlyGlobeMaplyComponentTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mousebirdconsulting.WhirlyGlobeMaplyComponentTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -5223,15 +5081,6 @@
 			buildConfigurations = (
 				2BE537141D2499E500B60FAD /* Debug */,
 				2BE537151D2499E500B60FAD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2BE537161D2499E500B60FAD /* Build configuration list for PBXNativeTarget "WhirlyGlobeMaplyComponentTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2BE537171D2499E500B60FAD /* Debug */,
-				2BE537181D2499E500B60FAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
