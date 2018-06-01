@@ -1382,6 +1382,13 @@ using namespace Maply;
     return maxHeight;
 }
 
+- (NSArray *  __nonnull)findSelectableObjectsAtCoord:(MaplyCoordinate)coordinate{
+	CGPoint screenPoint = [self screenPointFromGeo:coordinate];
+	if (!renderControl) return nil;
+	return [renderControl->interactLayer findSelectableObjectsAt:screenPoint];
+}
+
+
 // Called back on the main thread after the interaction thread does the selection
 - (void)handleSelection:(MaplyTapMessage *)msg didSelect:(NSArray *)selectedObjs
 {

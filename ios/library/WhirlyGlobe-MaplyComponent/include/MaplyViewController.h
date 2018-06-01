@@ -642,6 +642,18 @@ typedef NS_ENUM(NSInteger, MaplyMapType) {
  */
 - (float)findHeightToViewBounds:(MaplyBoundingBox)bbox pos:(MaplyCoordinate)pos marginX:(double)marginX marginY:(double)marginY;
 
+
+/**
+ Find selectable objects (no features though) at some coordinate
+ 
+ The search is inefficient, so don't call this a lot.
+ 
+ @param coordinate where we want to find objects
+ 
+ */
+- (NSArray *  __nonnull)findSelectableObjectsAtCoord:(MaplyCoordinate)coordinate;
+
+
 /**
  
     Return the extents of the current view

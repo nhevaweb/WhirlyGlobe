@@ -3667,6 +3667,41 @@ typedef std::set<GeomModelInstances *,struct GeomModelInstancesCmp> GeomModelIns
     return nil;
 }
 
+- (NSArray *)findSelectableObjectsAt:(CGPoint)screenPoint
+{
+	SelectionManager *selectManager = (SelectionManager *)scene->getManager(kWKSelectionManager);
+	std::vector<SelectionManager::SelectedObject> selectedObjs;
+	selectManager->pickObjects(Point2f(screenPoint.x,screenPoint.y),10.0,visualView,selectedObjs);
+	
+	NSMutableArray *retSelectArr = [NSMutableArray array];
+	if (!selectedObjs.empty())
+	{
+		// Work through the objects the manager found, creating entries for each
+		for (unsigned int ii=0;ii<selectedObjs.size();ii++)
+		{
+			SelectionManager::SelectedObject &theSelObj = selectedObjs[ii];
+			MaplySelectedObject *selObj = [[MaplySelectedObject alloc] init];
+			
+			for (auto selectID : theSelObj.selectIDs)
+			{
+				SelectObjectSet::iterator it = selectObjectSet.find(SelectObject(selectID));
+				if (it != selectObjectSet.end())
+				selObj.selectedObj = it->obj;
+				
+				selObj.screenDist = theSelObj.screenDist;
+				selObj.cluster = theSelObj.isCluster;
+				selObj.zDist = theSelObj.distIn3D;
+				
+				if (selObj.selectedObj)
+				[retSelectArr addObject:selObj];
+			}
+		}
+	}
+	return retSelectArr;
+}
+
+
+
 - (void)dumpStats
 {
     @synchronized (userObjects) {
