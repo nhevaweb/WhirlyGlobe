@@ -14,10 +14,7 @@
 		2B127C07201911DC0099F405 /* MapboxVectorTilesPagingDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2B127C05201911DC0099F405 /* MapboxVectorTilesPagingDelegate.mm */; };
 		2B3FD2C31F478F5200CA9C18 /* MaplyRenderTarget.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2B3FD2C21F478F5200CA9C18 /* MaplyRenderTarget.mm */; };
 		2B541C171ECFAA2300EC35A0 /* MaplyRenderTarget.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B541C161ECFAA2300EC35A0 /* MaplyRenderTarget.h */; };
-<<<<<<< HEAD
-		2B82B5D31E82E2490095FB14 /* SDL_opengles.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B82B3AB1E82E2490095FB14 /* SDL_opengles.h */; };
-=======
->>>>>>> ff6d4e95106f8fe40fc6f668189effab535fef49
+
 		2B82B5D51E82E2490095FB14 /* glues_error.c in Sources */ = {isa = PBXBuildFile; fileRef = 2B82B3AD1E82E2490095FB14 /* glues_error.c */; };
 		2B82B5D61E82E2490095FB14 /* glues_error.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B82B3AE1E82E2490095FB14 /* glues_error.h */; };
 		2B82B5D71E82E2490095FB14 /* glues_mipmap.c in Sources */ = {isa = PBXBuildFile; fileRef = 2B82B3AF1E82E2490095FB14 /* glues_mipmap.c */; };
@@ -1073,7 +1070,6 @@
 		2B127C05201911DC0099F405 /* MapboxVectorTilesPagingDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MapboxVectorTilesPagingDelegate.mm; sourceTree = "<group>"; };
 		2B3FD2C21F478F5200CA9C18 /* MaplyRenderTarget.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MaplyRenderTarget.mm; sourceTree = "<group>"; };
 		2B541C161ECFAA2300EC35A0 /* MaplyRenderTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaplyRenderTarget.h; sourceTree = "<group>"; };
-<<<<<<< HEAD
 		2B82B3AB1E82E2490095FB14 /* SDL_opengles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDL_opengles.h; path = "../../../third-party/glues/include/SDL/SDL_opengles.h"; sourceTree = "<group>"; };
 		2B82B3AC1E82E2490095FB14 /* glues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = glues.h; path = "../../../third-party/glues/source/glues.h"; sourceTree = "<group>"; };
 		2B82B3AD1E82E2490095FB14 /* glues_error.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = glues_error.c; path = "../../../third-party/glues/source/glues_error.c"; sourceTree = "<group>"; };
@@ -1111,44 +1107,7 @@
 		2B82B3CD1E82E2490095FB14 /* tess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tess.h; sourceTree = "<group>"; };
 		2B82B3CE1E82E2490095FB14 /* tessmono.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tessmono.c; sourceTree = "<group>"; };
 		2B82B3CF1E82E2490095FB14 /* tessmono.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tessmono.h; sourceTree = "<group>"; };
-=======
-		2B82B3AC1E82E2490095FB14 /* glues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = glues.h; path = ../../../common/local_libs/glues/source/glues.h; sourceTree = "<group>"; };
-		2B82B3AD1E82E2490095FB14 /* glues_error.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = glues_error.c; path = ../../../common/local_libs/glues/source/glues_error.c; sourceTree = "<group>"; };
-		2B82B3AE1E82E2490095FB14 /* glues_error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = glues_error.h; path = ../../../common/local_libs/glues/source/glues_error.h; sourceTree = "<group>"; };
-		2B82B3AF1E82E2490095FB14 /* glues_mipmap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = glues_mipmap.c; path = ../../../common/local_libs/glues/source/glues_mipmap.c; sourceTree = "<group>"; };
-		2B82B3B01E82E2490095FB14 /* glues_mipmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = glues_mipmap.h; path = ../../../common/local_libs/glues/source/glues_mipmap.h; sourceTree = "<group>"; };
-		2B82B3B11E82E2490095FB14 /* glues_project.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = glues_project.c; path = ../../../common/local_libs/glues/source/glues_project.c; sourceTree = "<group>"; };
-		2B82B3B21E82E2490095FB14 /* glues_project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = glues_project.h; path = ../../../common/local_libs/glues/source/glues_project.h; sourceTree = "<group>"; };
-		2B82B3B31E82E2490095FB14 /* glues_quad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = glues_quad.c; path = ../../../common/local_libs/glues/source/glues_quad.c; sourceTree = "<group>"; };
-		2B82B3B41E82E2490095FB14 /* glues_quad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = glues_quad.h; path = ../../../common/local_libs/glues/source/glues_quad.h; sourceTree = "<group>"; };
-		2B82B3B51E82E2490095FB14 /* glues_registry.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = glues_registry.c; path = ../../../common/local_libs/glues/source/glues_registry.c; sourceTree = "<group>"; };
-		2B82B3B61E82E2490095FB14 /* glues_registry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = glues_registry.h; path = ../../../common/local_libs/glues/source/glues_registry.h; sourceTree = "<group>"; };
-		2B82B3B71E82E2490095FB14 /* glues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = glues.h; path = ../../../common/local_libs/glues/source/glues.h; sourceTree = "<group>"; };
-		2B82B3B81E82E2490095FB14 /* alg-outline */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "alg-outline"; path = "../../../../common/local_libs/glues/source/libtess/alg-outline"; sourceTree = "<group>"; };
-		2B82B3B91E82E2490095FB14 /* dict-list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "dict-list.h"; path = "../../../../common/local_libs/glues/source/libtess/dict-list.h"; sourceTree = "<group>"; };
-		2B82B3BA1E82E2490095FB14 /* dict.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = dict.c; path = ../../../../common/local_libs/glues/source/libtess/dict.c; sourceTree = "<group>"; };
-		2B82B3BB1E82E2490095FB14 /* dict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dict.h; path = ../../../../common/local_libs/glues/source/libtess/dict.h; sourceTree = "<group>"; };
-		2B82B3BC1E82E2490095FB14 /* geom.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = geom.c; path = ../../../../common/local_libs/glues/source/libtess/geom.c; sourceTree = "<group>"; };
-		2B82B3BD1E82E2490095FB14 /* geom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = geom.h; path = ../../../../common/local_libs/glues/source/libtess/geom.h; sourceTree = "<group>"; };
-		2B82B3BE1E82E2490095FB14 /* memalloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = memalloc.c; path = ../../../../common/local_libs/glues/source/libtess/memalloc.c; sourceTree = "<group>"; };
-		2B82B3BF1E82E2490095FB14 /* memalloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = memalloc.h; path = ../../../../common/local_libs/glues/source/libtess/memalloc.h; sourceTree = "<group>"; };
-		2B82B3C01E82E2490095FB14 /* mesh.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mesh.c; path = ../../../../common/local_libs/glues/source/libtess/mesh.c; sourceTree = "<group>"; };
-		2B82B3C11E82E2490095FB14 /* mesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mesh.h; path = ../../../../common/local_libs/glues/source/libtess/mesh.h; sourceTree = "<group>"; };
-		2B82B3C21E82E2490095FB14 /* normal.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = normal.c; path = ../../../../common/local_libs/glues/source/libtess/normal.c; sourceTree = "<group>"; };
-		2B82B3C31E82E2490095FB14 /* normal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = normal.h; path = ../../../../common/local_libs/glues/source/libtess/normal.h; sourceTree = "<group>"; };
-		2B82B3C41E82E2490095FB14 /* priorityq-heap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "priorityq-heap.h"; path = "../../../../common/local_libs/glues/source/libtess/priorityq-heap.h"; sourceTree = "<group>"; };
-		2B82B3C51E82E2490095FB14 /* priorityq-sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "priorityq-sort.h"; path = "../../../../common/local_libs/glues/source/libtess/priorityq-sort.h"; sourceTree = "<group>"; };
-		2B82B3C61E82E2490095FB14 /* priorityq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = priorityq.c; path = ../../../../common/local_libs/glues/source/libtess/priorityq.c; sourceTree = "<group>"; };
-		2B82B3C71E82E2490095FB14 /* priorityq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = priorityq.h; path = ../../../../common/local_libs/glues/source/libtess/priorityq.h; sourceTree = "<group>"; };
-		2B82B3C81E82E2490095FB14 /* render.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = render.c; path = ../../../../common/local_libs/glues/source/libtess/render.c; sourceTree = "<group>"; };
-		2B82B3C91E82E2490095FB14 /* render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = render.h; path = ../../../../common/local_libs/glues/source/libtess/render.h; sourceTree = "<group>"; };
-		2B82B3CA1E82E2490095FB14 /* sweep.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = sweep.c; path = ../../../../common/local_libs/glues/source/libtess/sweep.c; sourceTree = "<group>"; };
-		2B82B3CB1E82E2490095FB14 /* sweep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sweep.h; path = ../../../../common/local_libs/glues/source/libtess/sweep.h; sourceTree = "<group>"; };
-		2B82B3CC1E82E2490095FB14 /* tess.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tess.c; path = ../../../../common/local_libs/glues/source/libtess/tess.c; sourceTree = "<group>"; };
-		2B82B3CD1E82E2490095FB14 /* tess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tess.h; path = ../../../../common/local_libs/glues/source/libtess/tess.h; sourceTree = "<group>"; };
-		2B82B3CE1E82E2490095FB14 /* tessmono.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tessmono.c; path = ../../../../common/local_libs/glues/source/libtess/tessmono.c; sourceTree = "<group>"; };
-		2B82B3CF1E82E2490095FB14 /* tessmono.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tessmono.h; path = ../../../../common/local_libs/glues/source/libtess/tessmono.h; sourceTree = "<group>"; };
->>>>>>> ff6d4e95106f8fe40fc6f668189effab535fef49
+
 		2B82B3D21E82E2490095FB14 /* JSONOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONOptions.h; sourceTree = "<group>"; };
 		2B82B3D31E82E2490095FB14 /* libjson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libjson.h; sourceTree = "<group>"; };
 		2B82B3D41E82E2490095FB14 /* libbase64++.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "libbase64++.h"; sourceTree = "<group>"; };
