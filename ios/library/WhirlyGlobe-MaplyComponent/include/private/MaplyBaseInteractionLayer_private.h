@@ -187,7 +187,7 @@
 - (NSArray *)findVectorsInPoint:(WhirlyKit::Point2f)pt inView:(MaplyBaseViewController*)vc multi:(bool)multi;
 
 - (NSObject*)selectLabelsAndMarkerForScreenPoint:(CGPoint)screenPoint;
-- (NSArray *)findSelectableObjectsAt:(CGPoint)screenPoint;
+- (BOOL)isCluster: (MaplyComponentObject *)object;
 // Find the Maply object corresponding to the given ID (from the selection manager).
 // Thread-safe
 - (NSObject *)getSelectableObject:(WhirlyKit::SimpleIdentity)objId;

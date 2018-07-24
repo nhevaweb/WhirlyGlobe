@@ -245,7 +245,10 @@ public:
     
     /// Enable/disable a set of selectables
     void enableSelectables(const SimpleIDSet &selectIDs,bool enable);
-    
+	
+	void pickAllObjects(WhirlyKitView *theView, std::vector<SelectedObject> &selObjs);
+
+	
     /// Pass in the view point where the user touched.  This returns the closest hit within the given distance
     SimpleIdentity pickObject(Point2f touchPt,float maxDist,WhirlyKitView *theView);
     

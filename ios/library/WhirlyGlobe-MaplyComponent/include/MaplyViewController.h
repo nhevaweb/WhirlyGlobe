@@ -644,15 +644,14 @@ typedef NS_ENUM(NSInteger, MaplyMapType) {
 
 
 /**
- Find selectable objects (no features though) at some coordinate
+ Find if this MaplyComponentObject is clustered
  
  The search is inefficient, so don't call this a lot.
  
- @param coordinate where we want to find objects
+ @param object that we need to check
  
  */
-- (NSArray *  __nonnull)findSelectableObjectsAtCoord:(MaplyCoordinate)coordinate;
-
+- (BOOL)isCluster: (MaplyComponentObject *_Nonnull )object;
 
 /**
  

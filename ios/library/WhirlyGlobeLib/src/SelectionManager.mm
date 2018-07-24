@@ -838,6 +838,40 @@ Matrix2d SelectionManager::calcScreenRot(float &screenRot,WhirlyKitViewState *vi
     return screenRotMat;
 }
 
+void SelectionManager::pickAllObjects(WhirlyKitView *theView, std::vector<SelectedObject> &selObjs){
+	if (!renderer)
+		return;
+	
+	PlacementInfo pInfo(theView, renderer);
+	if (!pInfo.globeView && !pInfo.mapView)
+		return;
+	
+	NSTimeInterval now = CFAbsoluteTimeGetCurrent();
+	
+	LayoutManager *layoutManager = (LayoutManager *)scene->getManager(kWKLayoutManager);
+	pthread_mutex_lock(&mutex);
+
+	std::vector<ScreenSpaceObjectLocation> ssObjs;
+	getScreenSpaceObjects(pInfo,ssObjs,now);
+	if (layoutManager)
+		layoutManager->getScreenSpaceObjects(pInfo,ssObjs);
+
+	// Work through the 2D rectangles
+	for (unsigned int ii=0;ii<ssObjs.size();ii++)
+	{
+		ScreenSpaceObjectLocation &screenObj = ssObjs[ii];
+		for (auto shapeID : screenObj.shapeIDs)
+		{
+			SelectedObject selObj(shapeID,0.0,0.0);
+			selObj.isCluster = screenObj.isCluster;
+			selObjs.push_back(selObj);
+		}
+	}
+		pthread_mutex_unlock(&mutex);
+
+}
+
+
 /// Pass in the screen point where the user touched.  This returns the closest hit within the given distance
 // Note: Should switch to a view state, rather than a view
 void SelectionManager::pickObjects(Point2f touchPt,float maxDist,WhirlyKitView *theView,bool multi,std::vector<SelectedObject> &selObjs)

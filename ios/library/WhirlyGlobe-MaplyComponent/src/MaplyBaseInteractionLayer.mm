@@ -3715,37 +3715,38 @@ typedef std::set<GeomModelInstances *,struct GeomModelInstancesCmp> GeomModelIns
     return nil;
 }
 
-- (NSArray *)findSelectableObjectsAt:(CGPoint)screenPoint
+
+
+- (BOOL)isCluster: (MaplyComponentObject *)object
 {
+	pthread_mutex_lock(&selectLock);
+
 	SelectionManager *selectManager = (SelectionManager *)scene->getManager(kWKSelectionManager);
 	std::vector<SelectionManager::SelectedObject> selectedObjs;
-	selectManager->pickObjects(Point2f(screenPoint.x,screenPoint.y),10.0,visualView,selectedObjs);
-	
-	NSMutableArray *retSelectArr = [NSMutableArray array];
+	selectManager->pickAllObjects(visualView, selectedObjs);
+
+	bool returnValue =  false;
 	if (!selectedObjs.empty())
 	{
-		// Work through the objects the manager found, creating entries for each
-		for (unsigned int ii=0;ii<selectedObjs.size();ii++)
-		{
-			SelectionManager::SelectedObject &theSelObj = selectedObjs[ii];
-			MaplySelectedObject *selObj = [[MaplySelectedObject alloc] init];
-			
-			for (auto selectID : theSelObj.selectIDs)
-			{
-				SelectObjectSet::iterator it = selectObjectSet.find(SelectObject(selectID));
-				if (it != selectObjectSet.end())
-				selObj.selectedObj = it->obj;
-				
-				selObj.screenDist = theSelObj.screenDist;
-				selObj.cluster = theSelObj.isCluster;
-				selObj.zDist = theSelObj.distIn3D;
-				
-				if (selObj.selectedObj)
-				[retSelectArr addObject:selObj];
+		for(auto obj : selectedObjs) {
+			if (obj.isCluster) {
+				for (auto anID : object.selectIDs){
+					if(std::find(obj.selectIDs.begin(), obj.selectIDs.end(), anID) != obj.selectIDs.end()) {
+						returnValue = true;
+						break;
+					} else {
+						continue;
+					}
+				}
+			}
+			if (returnValue) {
+				break;
 			}
 		}
 	}
-	return retSelectArr;
+	pthread_mutex_unlock(&selectLock);
+	return returnValue;
+
 }
 
 
