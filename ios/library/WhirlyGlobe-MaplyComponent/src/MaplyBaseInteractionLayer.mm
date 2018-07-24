@@ -3717,7 +3717,7 @@ typedef std::set<GeomModelInstances *,struct GeomModelInstancesCmp> GeomModelIns
 
 
 
-- (BOOL)isCluster: (MaplyComponentObject *)object
+- (bool)isObjectCluster: (MaplyComponentObject *)object
 {
 	pthread_mutex_lock(&selectLock);
 

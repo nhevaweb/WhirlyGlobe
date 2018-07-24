@@ -1382,9 +1382,11 @@ using namespace Maply;
     return maxHeight;
 }
 
-- (BOOL)isCluster: (MaplyComponentObject *)object{
-	if (!renderControl) return nil;
-	return [renderControl->interactLayer isCluster:object];
+- (bool)isCluster: (MaplyComponentObject *)object{
+	if (!renderControl) {
+		return nil;
+	}
+	return [renderControl->interactLayer isObjectCluster:object];
 }
 
 // Called back on the main thread after the interaction thread does the selection
